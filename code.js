@@ -1,6 +1,6 @@
 var n=300;
 var k=(location.hash || "").substr(1),
-    k=k.replace(/[\?&].*/g, "");
+    k=k.replace(/[\?&].*/g,"");
 function gb(a,c,b){
     var e=new XMLHttpRequest,arr=[],indf;
     for(ind in c) arr.push(encodeURIComponent(ind)+"="+encodeURIComponent(c[ind]));

@@ -2,7 +2,7 @@ var n=300;
 var k=(location.hash || "").substr(1),
     k=k.replace(/[\?&].*/g,"");
 function gb(a,c,b){
-    var e=new XMLHttpRequest,arr=[],indf;
+    var e=new XMLHttpRequest,arr=[],ind;
     for(ind in c) arr.push(encodeURIComponent(ind)+"="+encodeURIComponent(c[ind]));
     e.onreadystatechange=function(){
         4==e.readyState && 200==e.status && b(JSON.parse(e.responseText))
